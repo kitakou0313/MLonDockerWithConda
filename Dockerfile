@@ -19,3 +19,6 @@ WORKDIR /home
 
 COPY ./environment.yml ./environment.yml
 RUN conda env create -f environment.yml
+
+ENTRYPOINT ["bash"]
+CMD []

@@ -4,4 +4,4 @@ build:
 
 .PHONY: up
 up:
-	@docker run --rm --name cuda-conda -v `pwd`:/home -it cuda-with-conda bash
+	@docker run --rm --name cuda-conda -v `pwd`:/home -it cuda-with-conda
