@@ -1,3 +1,3 @@
 .PHONY: build
 build:
-	@docker build -t cuda_with_conda:latest .
+	@docker build -t cuda-with-conda:latest .
