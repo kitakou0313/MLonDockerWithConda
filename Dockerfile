@@ -16,6 +16,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux
     ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "conda activate testenv" >> ~/.bashrc
+    # change env name to activate to environment.yml
 
 WORKDIR /home
 
