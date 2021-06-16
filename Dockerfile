@@ -2,6 +2,8 @@ FROM nvidia/cuda:11.3.1-cudnn8-devel-ubuntu20.04
 
 ENV PATH /opt/conda/bin:$PATH
 
+SHELL [ "/bin/bash", "--login", "-c" ]
+
 # Installing packages to install conda
 RUN apt-get update --fix-missing && \
     apt-get install -y wget bzip2 ca-certificates curl git && \
