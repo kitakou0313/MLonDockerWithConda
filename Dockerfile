@@ -26,6 +26,8 @@ WORKDIR /home
 COPY ./environment.yml ./environment.yml
 RUN conda env create -f environment.yml
 
+COPY ./entrypoint.sh ./entrypoint.sh
+
 # exec bash
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["./entrypoint.sh"]
 CMD []
