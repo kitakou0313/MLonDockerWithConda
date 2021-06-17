@@ -12,3 +12,11 @@ https://docs.google.com/presentation/d/1YDOTHVvmbeJQnF7jQio7HlD--gsZ71Ggos7478tl
 While making this repository, I read below articles as references.
 
 - https://towardsdatascience.com/conda-pip-and-docker-ftw-d64fe638dc45
+
+# How to activate
+
+- -v… Mount directory in host machine to container
+
+```
+docker run --rm --name cuda-conda -v `pwd`:/home -it cuda-with-conda
+```
