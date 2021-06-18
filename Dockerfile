@@ -29,5 +29,6 @@ RUN conda env create -f environment.yml
 COPY ./entrypoint.sh ./entrypoint.sh
 
 # activate env and exec command
+# entrypoint.shでconda環境をactivateし、CMDで渡される引数のコマンドを同じシェル内で実行している これをしないとconda環境が有効にならなさそう
 ENTRYPOINT ["./entrypoint.sh"]
 CMD []
