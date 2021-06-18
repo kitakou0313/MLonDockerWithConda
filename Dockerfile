@@ -28,6 +28,6 @@ RUN conda env create -f environment.yml
 
 COPY ./entrypoint.sh ./entrypoint.sh
 
-# exec bash
+# activate env and exec command
 ENTRYPOINT ["./entrypoint.sh"]
 CMD []
