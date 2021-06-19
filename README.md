@@ -6,7 +6,7 @@ https://docs.google.com/presentation/d/1YDOTHVvmbeJQnF7jQio7HlD--gsZ71Ggos7478tl
 
 # Notification
 
-- Please change conda env name (in my `dockerfile` and `entrypoint.sh` this name is `testenv`)
+- Please change conda env name (in my `dockerfile` this name is `testenv`)
 
 # References
 While making this repository, I read below articles as references.
