@@ -6,11 +6,11 @@ WORKDIR /workspace
 COPY ./environment.yml ./environment.yml
 RUN conda env create -f environment.yml
 
-COPY ./entrypoint.sh /root/
+COPY ./entrypoint.sh /entry/
 
 RUN echo "conda activate testenv" >> ~/.bashrc
 
 # activate env and exec command
 # entrypoint.sh内の--loginでconda環境をactivateし、CMDで渡される引数のコマンドを同じシェル内で実行している これをしないとconda環境が有効にならなさそう
-ENTRYPOINT ["/root/entrypoint.sh"]
+ENTRYPOINT ["/entry/entrypoint.sh"]
 CMD []
