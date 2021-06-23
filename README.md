@@ -18,5 +18,5 @@ While making this repository, I read below articles as references.
 - -v… Mount directory in host machine to container
 
 ```
-docker run --rm --name cuda-conda -v `pwd`:/home -it cuda-with-conda
+docker run --gpus all --rm --name cuda-conda -v `pwd`:/home -it cuda-with-conda
 ```
